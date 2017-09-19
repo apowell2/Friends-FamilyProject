@@ -50,7 +50,8 @@
 
  h1, h2, h3, h4, h5, h6 {
  	font-family: 'Ubuntu', sans-serif;
- 	font-weight: 300;
+ 	font-weight: 100;
+
  }
 
  p.alert, p.notice {
@@ -59,7 +60,26 @@
 
 
  /* Navbar/navigation styles */
+ .email-alert {
+     padding: 20px;
+     background-color: blue;
+     color: white;
+ }
 
+ .closebtn {
+     margin-left: 15px;
+     color: white;
+     font-weight: bold;
+     float: right;
+     font-size: 22px;
+     line-height: 20px;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ .closebtn:hover {
+     color: black;
+ }
  .navbar {
  	font-family: 'Ubuntu', sans-serif;
  	text-transform: uppercase;

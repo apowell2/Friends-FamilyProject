@@ -24,6 +24,15 @@
         <% else %>
         <li><%= link_to "Log In", new_user_session_path %></li>
         <% end %>
+        <% if current_user && current_user.has_new_email %>
+          <li>
+            <div class="email-alert">
+              <span class="closebtn" onclick="dismissAlert(<%= current_user.id %>)">&times;</span>
+              <strong>You have unread messages</strong> Check your email.
+            </div>
+          </li>
+        <% end %>
+
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
